@@ -47,6 +47,6 @@ app.use(`/healthcheck`, (_, res) => {
   res.send("OK");
 });
 
-app.listen(3000, "localhost", () => {
+app.listen(3000, "0.0.0.0", () => {
   console.log("Server listening on port ", 3000);
 });
